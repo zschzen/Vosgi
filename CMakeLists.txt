@@ -8,6 +8,8 @@ add_library(Vosgi SHARED
         src/Vosgi.cpp)
 set_target_properties( Vosgi PROPERTIES OUTPUT_NAME ${CMAKE_PROJECT_NAME} )
 
+target_include_directories( Vosgi PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include )
+
 include_directories( "include" )
 #add_subdirectory( "lib" )
 add_subdirectory( "src" )
